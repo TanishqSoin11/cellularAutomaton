@@ -37,6 +37,9 @@ function draw() {
       let y = j * resolution;
       if (grid[i][j] == 1) {
         switch(countNeighbors(grid, i, j)){
+          case 0:
+              fill(	'#FF4500');
+              break;
           case 1:
               fill(	'#FF4500');
               break;
